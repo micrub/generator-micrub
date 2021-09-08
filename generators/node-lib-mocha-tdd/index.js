@@ -20,6 +20,12 @@ module.exports = class extends Generator {
         name: "name",
         message: "Your project name",
         default: this.appname // Default to current folder name
+      },
+      {
+        type: "input",
+        name: "author",
+        message: "Author full name",
+        default: "Anon"
       }
     ];
 

@@ -7,8 +7,8 @@
     "start": "DEBUG=<%= name %>* node .",
     "test": "DEBUG=<%= name %>* mocha ."
   },
-  "author": "",
-  "license": "ISC",
+  "author": "<%= author %>",
+  "license": "MIT",
   "dependencies": {
     "debug": "^4.3.2"
   },
