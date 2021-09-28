@@ -1,0 +1,22 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=<%= name %>* node .",
+    "test": "DEBUG=<%= name %>* mocha ."
+  },
+  "author": "<%= author %>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.0"
+  },
+  "peerDependencies": {
+    "eslint" : "*"
+  }
+}
