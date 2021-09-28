@@ -20,6 +20,12 @@ module.exports = class extends Generator {
         name: "name",
         message: "Your project name",
         default: this.appname // Default to current folder name
+      },
+      {
+        type: "input",
+        name: "author",
+        message: "Author's full name",
+        default: "Anonymous"
       }
     ];
 
@@ -37,7 +43,7 @@ module.exports = class extends Generator {
       "_gitignore",
       "test/"
     ];
-    const templateList = ["package.json", "package-lock.json"];
+    const templateList = ["package.json"];
     for (let index = 0; index < copyList.length; index++) {
       let copyPathFrom = copyList[index];
       let copyPathTo = copyPathFrom;

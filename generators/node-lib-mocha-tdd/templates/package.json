@@ -7,13 +7,16 @@
     "start": "DEBUG=<%= name %>* node .",
     "test": "DEBUG=<%= name %>* mocha ."
   },
-  "author": "",
-  "license": "ISC",
+  "author": "<%= author %>",
+  "license": "MIT",
   "dependencies": {
     "debug": "^4.3.2"
   },
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.1.0"
+  },
+  "peerDependencies": {
+    "eslint" : "*"
   }
 }
