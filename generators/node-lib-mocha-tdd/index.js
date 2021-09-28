@@ -24,8 +24,8 @@ module.exports = class extends Generator {
       {
         type: "input",
         name: "author",
-        message: "Author full name",
-        default: "Anon"
+        message: "Author's full name",
+        default: "Anonymous"
       }
     ];
 
