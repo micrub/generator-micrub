@@ -5,6 +5,7 @@
   "author": "<%= author %>",
   "license": "MIT",
   "scripts": {
+    "start": "npm run build && node dist/",
     "build-ts": "rm -rf dist/ && tsc",
     "build": "npm run build-ts && npm run lint",
     "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
