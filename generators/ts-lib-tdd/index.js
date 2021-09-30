@@ -37,11 +37,14 @@ module.exports = class extends Generator {
 
   writing() {
     const copyList = [
-      "index.js",
-      "utils.js",
+      "README.md",
+      "tsconfig.js",
       "_mocharc.js",
       "_gitignore",
-      "test/"
+      "_eslintrc",
+      "_eslintignore",
+      "test/",
+      "src/"
     ];
     const templateList = ["package.json"];
     for (let index = 0; index < copyList.length; index++) {

@@ -6,6 +6,13 @@
 npm test
 ```
 
+## build
+
+the product will be rendered in `dist/`, see `tsconfig.json` for details.
+```
+npm run build
+```
+
 ## TODO: notifications 
 
 #### Mac os and growl

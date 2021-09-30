@@ -1,22 +1,21 @@
 {
-  "name": "ts-lib-tdd",
+  "name": "<%= name %>",
   "version": "0.0.1",
   "description": "A starting point Node.js TypeScript lib supported by TDD",
-  "author": "Michael Rubanov",
+  "author": "<%= author %>",
   "license": "MIT",
   "scripts": {
-    "build-ts": "tsc",
+    "build-ts": "rm -rf dist/ && tsc",
     "build": "npm run build-ts && npm run lint",
     "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
-    "test": "mocha --config .mocharc.js",
-    "prepare": "husky install"
+    "test": "mocha --config .mocharc.js"
   },
   "dependencies": {
-    "debug": "^4.3.2",
-    "growl": "^1.10.5"
+    "debug": "^4.3.2"
   },
   "devDependencies": {
     "@types/chai": "^4.2.22",
+    "@types/debug": "^4.1.7",
     "@types/mocha": "^9.0.0",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "chai": "^4.3.4",
