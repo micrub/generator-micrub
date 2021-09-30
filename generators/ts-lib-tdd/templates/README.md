@@ -1,5 +1,10 @@
 # TypeScript Node Lib Starter with TDD
 
+# Setup
+
+```
+npm i
+```
 ## testing
 
 ```
