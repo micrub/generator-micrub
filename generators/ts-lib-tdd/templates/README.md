@@ -2,7 +2,11 @@
 
 ## testing
 
-### nottifications
+```
+npm test
+```
+
+## TODO: notifications 
 
 #### Mac os and growl
 
