@@ -1,6 +1,8 @@
 import debug from 'debug';
+import { name } from '../package.json';
 
-const d = debug(process.env.npm_package_name);
+const PACKAGE_NAME =  name  || 'UNDETECTED'
+const d = debug(PACKAGE_NAME);
 d("Hlo!");
 
 export default function() {
