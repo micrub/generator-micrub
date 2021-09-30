@@ -38,7 +38,7 @@ module.exports = class extends Generator {
   writing() {
     const copyList = [
       "README.md",
-      "tsconfig.js",
+      "tsconfig.json",
       "_mocharc.js",
       "_gitignore",
       "_eslintrc",
