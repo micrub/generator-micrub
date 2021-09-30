@@ -1,6 +1,6 @@
 {
   "name": "generator-micrub",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "my generators",
   "homepage": "",
   "author": {
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "chalk": "^2.1.0",
+    "node-config": "^0.0.2",
     "yeoman-generator": "^5.4.2",
     "yosay": "^2.0.2"
   },
