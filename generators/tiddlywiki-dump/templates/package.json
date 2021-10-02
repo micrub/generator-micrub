@@ -1,0 +1,16 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.1",
+  "description": "tiddly for my chores",
+  "main": "wiki-content/output/index.html",
+  "scripts": {
+    "start": "DEBUG=tiddly-chores* tiddlywiki wiki-content --listen", 
+    "build": "tiddlywiki wiki-content --build index"
+  },
+  "author": "<%= author %>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^4.3.2",
+    "tiddlywiki": "^5.1.23"
+  }
+}
