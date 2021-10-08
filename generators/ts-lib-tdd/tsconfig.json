@@ -25,4 +25,13 @@
         "./node_modules/",
         "./dist/"
       ],
+      "typeRoots": [
+      "node_modules/@types", "./typings"
+    ],
+    "types": [
+      "mocha",
+      "chai",
+      "node",
+      "global"
+    ]
 }
