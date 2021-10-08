@@ -10,7 +10,7 @@ module.exports = class extends Generator {
       yosay(
         `Welcome to the groovy ${chalk.red(
           "generator-micrub"
-        )} node-lib-tdd generator!`
+        )} tiddlywiki generator!`
       )
     );
 
@@ -31,18 +31,13 @@ module.exports = class extends Generator {
 
     return this.prompt(prompts).then(props => {
       // To access props later use this.props.someAnswer;
+      // TODO keep `name` in format `blaadasd-asd-ads-{dump}`
       this.props = props;
     });
   }
 
   writing() {
-    const copyList = [
-      "index.js",
-      "utils.js",
-      "_mocharc.js",
-      "_gitignore",
-      "test/"
-    ];
+    const copyList = ["_mocharc.js", "_gitignore", "wiki-content"];
     const templateList = ["package.json"];
     for (let index = 0; index < copyList.length; index++) {
       let copyPathFrom = copyList[index];

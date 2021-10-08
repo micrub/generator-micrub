@@ -5,11 +5,12 @@
   "author": "<%= author %>",
   "license": "MIT",
   "scripts": {
-    "start": "npm run build && node dist/",
+    "start": "DEBUG=<%= name %>* npm run build  && cd ./dist/src && node .",
     "build-ts": "rm -rf dist/ && tsc",
-    "build": "npm run build-ts && npm run lint",
+    "build": "npm run build-ts && npm run lint --fix && cd dist/src && npm install",
     "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
-    "test": "mocha --config .mocharc.js"
+    "ts-test" : "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'",
+    "test": "npm run build && npm run ts-test"
   },
   "dependencies": {
     "debug": "^4.3.2"
