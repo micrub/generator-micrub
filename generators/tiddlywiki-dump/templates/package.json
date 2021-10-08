@@ -1,7 +1,7 @@
 {
-  "name": "<%= name %>",
+  "name": "<%= name %>-dump",
   "version": "0.0.1",
-  "description": "tiddly for my chores",
+  "description": "",
   "main": "wiki-content/output/index.html",
   "scripts": {
     "start": "DEBUG=tiddly-chores* tiddlywiki wiki-content --listen", 
