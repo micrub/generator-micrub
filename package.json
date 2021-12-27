@@ -74,6 +74,7 @@
     ]
   },
   "scripts": {
+    "debug-wip": "DEBUG=* node ./generators/node-package-base/",
     "pretest": "eslint .",
     "test": "jest"
   },
