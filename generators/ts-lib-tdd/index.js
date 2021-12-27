@@ -1,9 +1,8 @@
+/* eslint-disable no-undef */
 "use strict";
-const Generator = require("yeoman-generator");
-const chalk = require("chalk");
-const yosay = require("yosay");
+import Generator from "yeoman-generator";
 
-module.exports = class extends Generator {
+export default class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
     this.log(
@@ -73,4 +72,4 @@ module.exports = class extends Generator {
       );
     }
   }
-};
+}
