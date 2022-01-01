@@ -2,7 +2,7 @@ const Generator = require("yeoman-generator");
 const d = require("debug")(__filename);
 
 class NodePackageBase extends Generator {
-  constructor() {
+  constructor(args, opts) {
     super();
     d("Starting `NodePackageBase`");
   }
