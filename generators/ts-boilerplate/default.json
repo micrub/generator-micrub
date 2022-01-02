@@ -1,0 +1,12 @@
+{
+    "copy": [
+     "README.md",
+      "tsconfig.json",
+      "_gitignore",
+      "_eslintrc.json",
+      "src/"
+    ],
+    "compile": [
+        
+    ]
+}
